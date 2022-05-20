@@ -1,0 +1,424 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+
+}
+.shadows{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
+}
+.padding-g-x{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h3{
+    line-height: 1.5;
+}
+.btn{
+    text-decoration: none;
+    background: #b71c1c;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    color: wheat;
+    display: inline-block;
+}
+.btn:hover{
+    background: white;
+    color: #263238;
+    border: 1px solid #b71c1c;
+    box-shadow:0 0.7rem 1.5rem rgb(0 0 0 / 40%);
+    transition: 0.2s;
+}
+.bg-img{
+    position: absolute; 
+    z-index: -1;
+    opacity: 0.4;
+    position:absolute;
+    width: 100%;
+    transform: rotate(90deg);
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+}
+.logo-img{
+    width: 25%;
+}
+.border{
+    display: block;
+    width: 100%;
+    background: #1eafaf;
+    position: relative;
+    /* padding: 10px; */
+    border-top: 0.1px solid #666;
+    margin: 1.5rem 0;
+}
+/**********/
+
+
+
+/* header-top */
+.header-top{
+    background: rgb(255, 255, 255);
+}
+.institute-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+}
+.Name{
+    grid-column: span 2;
+    text-align: center;
+}
+.logo-1{
+    text-align: left;
+}
+.logo-2{
+    text-align: right;
+}
+
+
+/* NAV */
+.nav{
+    width: 100%;
+    padding: 12px;
+    background: #e91e63; 
+}
+.nav-items{
+    list-style-type: none;
+}
+.items{
+    text-decoration: none;
+}
+
+
+/* notice-board */
+.notice-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    background: rgb(255, 255, 255);
+    margin: 0.5em 0;
+}
+.notice-board .notice{
+    display: inline-block;
+    background: aqua;
+    width: 250px;
+    padding: 10px;
+    position: relative;
+}
+.notice-board .notice::before{
+    content: '►';
+    color: cyan;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 10px;
+    font-size: 33px;
+}
+
+/* grid-slider */
+.grid-slider{
+    margin-bottom: 1.5rem;
+}
+.grid-items-1{
+    display: grid;
+    grid-template-columns: repeat(3, 31.9%);
+    justify-content: center;
+    gap: 1.5rem;
+}
+.items-1{
+    background-color:#f4fafb;
+    overflow: hidden;
+    grid-column: span 2;
+    padding: 12px;
+}
+.items-2 .Teacher-grid-1{
+    display: grid;
+    grid-template-columns: 7rem auto;
+    align-items: center;
+    padding: 12px;
+}
+.Teacher-title{
+    text-align: center;
+    background: linear-gradient(45deg, #f44336, transparent);
+    width: 100%;
+    height: 30px;
+}
+.Teacher-content {
+    border: 1px solid #f44336;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+}
+.items-2{
+    grid-row: span 2;
+}
+.items-2 .Teacher-grid-2{
+    display: grid;
+    grid-template-columns: 7rem auto;
+    align-items: center;
+    padding: 12px;
+}
+.items-3{
+    background-color: #f4fafb;
+    text-align: center;
+    grid-column: span 2;
+    padding: 12px;
+}
+.notis-title{
+    text-align: center;
+    background: linear-gradient(45deg, #13c1d7, transparent);
+    width: 100%;
+    height: 30px;
+}
+.notis-content {
+    border: 1px solid #f44336;
+    background-color: #f1f1f1;
+}
+.notis-grid{
+    display: grid;
+    align-items: center;
+    border-bottom: ridge;
+    grid-template-columns: 3rem auto;
+    padding: 12px 0;
+}
+
+
+/* grid-news */
+.grid-news{
+    background-color: #f4fafb;
+    margin-bottom: 1.5rem;
+}
+.news-items{
+    display: grid;
+    grid-template-columns: repeat(4, 23.3333%);
+    gap: 1.5rem;
+    padding: 0px 12px;
+}
+.news-card-img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.news-card{
+    padding: 1rem 0;
+}
+.news-title{
+    padding: 0px 1rem;
+    background: linear-gradient(45deg, #f44336, transparent);
+}
+
+
+/* grid-events */
+.grid-events{
+    margin-bottom: 1.5rem ;
+}
+.events{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1.5rem;
+}
+.events-box1{
+    background: rgb(247, 247, 247);
+    padding: 0.3rem 1.2rem;
+}
+.events-grid-1{
+    display: grid;
+    grid-template-columns: 10rem auto;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #f44336;
+    background-color: #f1f1f1;
+    margin: 12px 0px;
+}
+.achievement-title{
+    background: linear-gradient(45deg, #3f51b5, transparent);
+    width: 100%;
+    height: 40px;
+    padding: 0px 12px;
+}
+.events-title{
+    background: linear-gradient(45deg, #e91e63, transparent);
+    width: 100%;
+    height: 40px;
+    padding: 0px 12px;
+}
+
+/* gallery */
+.grid-gallery{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 1.5rem;
+}
+.video-gallery, .photo-gallery{
+    grid-column: span 2;
+}
+.video-title{
+    background: linear-gradient(45deg, #f44336, transparent);
+    width: 100%;
+    height: 40px;
+    padding: 0px 12px;
+    
+}
+.photo-title{
+    background: linear-gradient(45deg, #f44336, transparent);
+    width: 100%;
+    height: 40px;
+    padding: 0px 12px;
+}
+.visitor-title{
+    background: linear-gradient(45deg, #00bcd4, transparent);
+    width: 100%;
+    height: 40px;
+    padding: 0px 12px;
+}
+.gallery-img{
+    width: 100%;
+}
+.video-img{
+    height: 219px;
+}
+
+.visitor .visitor-items {
+    list-style: none;
+    padding: 0.8rem 0;
+}
+.visitor .visitor-items .visitor-list{
+    padding: 5px 0;
+    color: #263238;
+}    
+.visitor-list::before {
+    content: " ➜ ";
+    color: #263238;
+    font-weight: bold;
+    width: 1em;
+    margin: 5px;
+}
+
+/* question */
+.question{
+    margin-bottom: 1.5rem;
+}
+.grid-question{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.question-item-1{
+    padding: 12px;
+}
+.question-item-1 .question-title , .question-pera{
+    margin-bottom: 10px;
+}
+.question-item-1 .question-title, .img-title{
+    color: #00bcd4;
+}
+
+.carton-img{
+    width: 60%;
+}
+.grid-question .question-item-2{
+    display: grid;
+    grid-template-columns: repeat(2, 12rem);
+    gap: 1rem;
+    justify-content: center;
+}
+.items-grid{
+    text-align: center;
+    padding: 12px;
+    background: radial-gradient(transparent, #ebebeb);
+}
+
+
+/* footer */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 13rem);
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #00bcd4;
+}
+.footer .footer-title{
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: #ffff;
+}
+.footer-items{
+    padding: 12px 0;
+}
+.item{
+    color: #ffff;
+    font-size: 13px;
+}
+.items-title{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+/*  Queries */
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+   .institute-grid .inst-name{font-size: 25px;}      
+   .notice-content .notice{
+       width: 135px;
+   }
+    .notice-content .notic-news{
+        font-size: 12px;
+    }
+   .grid-items-1{
+    grid-template-columns: repeat(1, 33.333%);
+   }
+   .grid-items-1 .items-1{
+    grid-column: span 3;
+   }
+   .grid-items-1 .items-2{
+    grid-column: span 3;
+   }
+   .grid-items-1 .items-3{
+    grid-column: span 3;
+   }
+   .news-items{
+       grid-template-columns: repeat(auto-fit, 20.3rem);
+   }
+   .events{
+    grid-template-columns: repeat(1, auto);
+   }
+   .grid-gallery{
+    grid-template-columns: repeat(1, auto);
+    }
+   .grid-gallery .visitor{
+        grid-column: span 2;
+    }
+   .grid-question{
+    grid-template-columns: repeat(1, 100%);
+    }
+   .grid-question .question-item-2{    
+       grid-template-columns: repeat(2, 10rem);
+    }
+    .grid-question .question-item-1{    
+       text-align: center;
+    }
+   .footer{grid-template-columns: repeat(1, auto);}
+  }
+  
